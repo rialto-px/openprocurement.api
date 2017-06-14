@@ -311,12 +311,12 @@ def set_ownership(item, request):
 
 
 def set_modetest_titles(tender):
-    if not tender.title or u'[ТЕСТУВАННЯ]' not in tender.title:
-        tender.title = u'[ТЕСТУВАННЯ] {}'.format(tender.title or u'')
+    if not tender.title or u'[TESTING]' not in tender.title:
+        tender.title = u'[TESTING] {}'.format(tender.title or u'')
     if not tender.title_en or u'[TESTING]' not in tender.title_en:
         tender.title_en = u'[TESTING] {}'.format(tender.title_en or u'')
-    if not tender.title_ru or u'[ТЕСТИРОВАНИЕ]' not in tender.title_ru:
-        tender.title_ru = u'[ТЕСТИРОВАНИЕ] {}'.format(tender.title_ru or u'')
+    if not tender.title_ru or u'[TESTING]' not in tender.title_ru:
+        tender.title_ru = u'[TESTING] {}'.format(tender.title_ru or u'')
 
 
 def save_tender(request):
